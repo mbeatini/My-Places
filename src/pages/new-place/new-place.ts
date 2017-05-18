@@ -27,6 +27,8 @@ export class NewPlacePage {
   }
 
   onLocateUser() {
+
+    
     this.geolocation.getCurrentPosition().then((resp) => {
        this.location.lat = resp.coords.latitude;
        this.location.lng = resp.coords.longitude;
